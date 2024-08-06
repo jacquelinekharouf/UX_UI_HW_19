@@ -1,0 +1,272 @@
+
+.inline-block-head{
+    display: inline-flex;
+    flex-direction: row;
+    vertical-align: bottom;
+    padding-inline: 50px;
+    
+}
+.inline-block-foot{
+    display: inline-flex;
+    flex-direction: row;
+    vertical-align: bottom;
+    padding-inline: 50px;
+    color: #F9F8F6;
+}
+.logo {
+    display: inline-block;
+    flex-direction: row;
+    vertical-align: left;
+    padding-inline: 50px;
+    padding-top: 1%;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: inline-flex;
+    background-color: #F9F8F6;
+    color: #3B937B;
+    border-radius: 10px;
+    padding-bottom: 2%;
+    margin: auto;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 10px #8888881d;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    color: #3B937B;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+
+
+h6.a {
+    color: #000000;
+    text-decoration: none;
+    text-align: justify;
+}
+
+h6.b {
+    color: #3B937B;
+}
+
+h6.c {
+    color: #F9F8F6;
+}
+h3 {
+    color: #86DFEF;
+}
+
+.hero {
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroimg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 1000px;
+}
+
+.content {
+    display: block;
+    width: 1000px;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+.about {
+    text-align: left;
+    color: #3B937B;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    padding: 2%;
+    border-radius: 10px;
+    color: #F9F8F6 ;
+    background-color:#3B937B;
+    box-shadow: 5px 10px #888888;
+}
+
+.p2 {
+    font-family: 'Bad Script'; font-size: 20px;
+    text-align: justify;
+}
+
+
+.inline-block2{
+    display: flex;
+    background: linear-gradient(to right, #3B937B, #81C181, #86DFEF, #3B937B, #81C181);
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: auto;
+}
+
+.flexContainer {
+    display: flex;
+}
+
+.mySkillsBox, .myToolsBox {
+    background-color: #F9F8F6;
+    border-radius: 10px;
+    box-shadow: 5px 10px #8888881d;
+    padding-left: 3%;
+}
+.mySkillsTopHeader {
+    text-align: center;
+    color: #3B937B;
+    background-color: #86DFEF;
+    border-radius: 10px;
+    box-shadow: 5px 10px #8888881d;
+}
+.child1 {
+    text-align: center;
+    width: 33%;
+    margin: 1%;
+    padding: 1%;
+}
+.child2 {
+    text-align: center;
+    width: 33%;
+    margin: 1%;
+    padding: 1%;
+}
+.child3 {
+    text-align: center;
+    width: 33%;
+    margin: 1%;
+    padding: 1%;
+}
+.myWorkHeader {
+    text-align: center;
+    color: #3B937B;
+    background-color: #86DFEF;
+    border-radius: 10px;
+    box-shadow: 5px 10px #8888881d;
+}
+
+.work1 {
+    grid-area: area1;
+    border-radius: 10px;
+    
+}
+.work1Para {
+    grid-area: area1a;
+}
+
+.work2 {
+    grid-area: area2; 
+    border-radius: 10px;
+    
+}
+.work2Para {
+    grid-area: area2a;
+}
+
+.work3 {
+    grid-area: area3;
+    border-radius: 10px;
+    
+}
+.work3Para {
+    grid-area: area3a;
+}
+
+
+.workGrid {
+    display: grid;
+    grid-template-areas: 
+    'area1 area1a'
+    'area2 area2a'
+    'area3 area3a';
+    grid-gap: 40px;
+    padding: 40px;
+    padding-bottom: 100px;
+    padding-top: 10px;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .flexContainer {
+        flex-direction: column;
+    }
+    .child1 {
+        text-align: center;
+        width: 100%;
+        margin: 1%;
+        padding: 1%;
+    }
+    .child2 {
+        text-align: center;
+        width: 100%;
+        margin: 1%;
+        padding: 1%;
+    }
+    .child3 {
+        text-align: center;
+        width: 100%;
+        margin: 1%;
+        padding: 1%;
+    }
+    .work1 {
+        grid-area: area1;
+        border-radius: 10px;
+        
+    }
+    .work1Para {
+        grid-area: area1a;
+    }
+    
+    .work2 {
+        grid-area: area2; 
+        border-radius: 10px;
+        
+    }
+    .work2Para {
+        grid-area: area2a;
+    }
+    
+    .work3 {
+        grid-area: area3;
+        border-radius: 10px;
+        
+    }
+    .work3Para {
+        grid-area: area3a;
+    }
+    
+    
+    .workGrid {
+        display: grid;
+        grid-template-areas: 
+        'area1' 
+        'area1a'
+        'area2'
+        'area2a'
+        'area3' 
+        'area3a';
+        grid-gap: 40px;
+        padding: 40px;
+        padding-bottom: 100px;
+        padding-top: 10px;
+        
+    }
+}
