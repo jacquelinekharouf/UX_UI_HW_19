@@ -51,6 +51,11 @@ h6.a {
     text-decoration: none;
     text-align: justify;
 }
+#a {
+    color: #000000;
+    text-decoration: none;
+    text-align: justify;
+}
 
 h6.b {
     color: #3B937B;
@@ -102,6 +107,14 @@ button {
     color: #F9F8F6 ;
     background-color:#3B937B;
     box-shadow: 5px 10px #888888;
+}
+#child1button, #child2button, #child3button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    padding: 2%;
+    border-radius: 10px;
 }
 
 .p2 {
