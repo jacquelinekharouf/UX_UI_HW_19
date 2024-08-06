@@ -51,7 +51,7 @@ h6.a {
     text-decoration: none;
     text-align: justify;
 }
-#a {
+h6#a {
     color: #000000;
     text-decoration: none;
     text-align: justify;
@@ -65,6 +65,12 @@ h6.c {
     color: #F9F8F6;
 }
 h3 {
+    color: #86DFEF;
+}
+h3#x {
+    color: #86DFEF;
+}
+h3#y {
     color: #86DFEF;
 }
 
