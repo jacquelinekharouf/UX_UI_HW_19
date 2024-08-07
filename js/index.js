@@ -5,7 +5,7 @@ $("#a").css("display","none");
 $("h3#x").css("display","none")
 
 $("#child1button").mouseenter(function(){
-    $(this).css("box-shadow", "10px 10px #888888");
+    $(this).css("box-shadow", "0px 0px 10px 5px #888888");
 }).mouseleave(function(){
     $(this).css("box-shadow", "0px 0px #888888");
  
