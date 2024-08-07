@@ -82,6 +82,7 @@ h3#y {
 .hero {
     display: grid;
     grid-template: 1fr / 1fr;
+    grid-area: top1;
     place-items: center;
     z-index: 2;
     position: relative;
@@ -95,6 +96,7 @@ h3#y {
     top: 0;
     display: grid;
     grid-template: 1fr / 1fr;
+    grid-area: top2;
     padding-top: 200px;
     place-items: center;
     z-index: 1;
@@ -107,6 +109,7 @@ h3#y {
 
 .content {
     display: grid;
+    grid-area: top3;
     grid-template-columns: 800px;
     grid-template-rows: 700px;
     width: 100%;
@@ -129,6 +132,10 @@ button {
     color: #F9F8F6 ;
     background-color:#3B937B;
     box-shadow: 5px 10px #888888;
+}
+a {
+    color: #F9F8F6;
+    text-decoration: none;
 }
 #child1button, #child2button, #child3button {
     display: inline-block;
@@ -181,6 +188,7 @@ button {
 
 .flexContainer {
     display: flex;
+    
 }
 
 .mySkillsBox, .myToolsBox {
@@ -261,6 +269,15 @@ button {
     padding-bottom: 100px;
     padding-top: 10px;
     
+}
+.headerGrid {
+    display: column;
+    grid-template-areas:
+    'top1'
+    'top2';
+    
+    padding-bottom: 200px;
+    padding-top: 5px;
 }
 
 @media only screen and (max-width: 600px) {
