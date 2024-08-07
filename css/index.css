@@ -44,7 +44,11 @@
     text-align: center;
 }
 
-
+h1 {
+    color: #3B937B;
+    text-decoration: none;
+    text-align: center;
+}
 
 h6.a {
     color: #000000;
@@ -75,33 +79,44 @@ h3#y {
 }
 
 .hero {
-    display: flex;
-    padding: 0px;
+    display: grid;
+    grid-template: 1fr / 1fr;
+    place-items: center;
+    z-index: 2;
+    position: relative;
+    padding-left: 50px;
+    padding-top: 200px;
     justify-content: center;
     align-items: center;
 }
 
 .heroimg {
-    display: flex;
-    flex-direction: row;
+    top: 0;
+    display: grid;
+    grid-template: 1fr / 1fr;
+    padding-top: 200px;
+    place-items: center;
+    z-index: 1;
+    position: absolute;
     justify-content: center;
     align-items: center;
     margin: 0;
-    width: 1000px;
+    width: 100%;
 }
 
 .content {
-    display: block;
-    width: 1000px;
-    margin: 0;
+    display: grid;
+    grid-template-columns: 800px;
+    grid-template-rows: 700px;
+    width: 100%;
+    margin: 0px;
     text-align: center;
-    padding-bottom: 1%;
+    justify-content: center;
+    padding-top: 250px;
+    padding-bottom: 1px;
 }
 
-.about {
-    text-align: left;
-    color: #3B937B;
-}
+
 
 button {
     display: flex;
