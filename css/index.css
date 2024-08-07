@@ -287,7 +287,9 @@ button {
         padding-top: 1%;
     }
     
+    
 .hero {
+    font-size: 30px;
     display: grid;
     grid-template: 1fr / 1fr;
     place-items: center;
