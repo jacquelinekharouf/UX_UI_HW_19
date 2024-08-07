@@ -4,6 +4,12 @@ $("h6#a").css("display","none");
 $("#a").css("display","none");
 $("h3#x").css("display","none")
 
+$("#child1button").mouseenter(function(){
+    $(this).css("box-shadow", "10px 10px #888888");
+}).mouseleave(function(){
+    $(this).css("box-shadow", "0px 0px #888888");
+ 
+});
 
 $("#child1button").on("click", function(){
     $(document).ready(function(){
@@ -14,6 +20,12 @@ $("#child1button").on("click", function(){
           });
 });
 
+$("#child2button").mouseenter(function(){
+    $(this).css("box-shadow", "10px 10px #888888");
+}).mouseleave(function(){
+    $(this).css("box-shadow", "0px 0px #888888");
+ 
+});
 $("#child2button").on("click", function(){
     $(document).ready(function(){
           $("h6:contains(I craft surveys that collect accurate data and help my team develop a full understanding of the typical user population.)").toggle();
@@ -23,6 +35,12 @@ $("#child2button").on("click", function(){
           });
 });
 
+$("#child3button").mouseenter(function(){
+    $(this).css("box-shadow", "10px 10px #888888");
+}).mouseleave(function(){
+    $(this).css("box-shadow", "0px 0px #888888");
+ 
+});
 $("#child3button").on("click", function(){
     $(document).ready(function(){
           $("h6:contains(I write questions that get to the heart of the problem. I listen to the user and take notes so that I can ask better follow-up questions.)").toggle();
@@ -32,13 +50,27 @@ $("#child3button").on("click", function(){
           });
 });
 
+$("#child1buttonT").mouseenter(function(){
+    $(this).css("box-shadow", "10px 10px #888888");
+}).mouseleave(function(){
+    $(this).css("box-shadow", "0px 0px #888888");
+ 
+});
+
 $("#child1buttonT").on("click", function(){
     $(document).ready(function(){
-          $("h6:contains(My most favorite and basic tool. By using paper and pencil, I visualize my ideas and leave room for error.)").toggle();
+          $("h6:contains(My favorite and most basic tool. By using paper and pencil, I visualize my ideas and leave room for error.)").toggle();
         });
     $(document).ready(function(){
             $("h3:contains(Paper & Pencil)").toggle();
           });
+});
+
+$("#child2buttonT").mouseenter(function(){
+    $(this).css("box-shadow", "10px 10px #888888");
+}).mouseleave(function(){
+    $(this).css("box-shadow", "0px 0px #888888");
+ 
 });
 
 $("#child2buttonT").on("click", function(){
@@ -48,6 +80,13 @@ $("#child2buttonT").on("click", function(){
     $(document).ready(function(){
             $("h3:contains(Figma)").toggle();
           });
+});
+
+$("#child3buttonT").mouseenter(function(){
+    $(this).css("box-shadow", "10px 10px #888888");
+}).mouseleave(function(){
+    $(this).css("box-shadow", "0px 0px #888888");
+ 
 });
 
 $("#child3buttonT").on("click", function(){
