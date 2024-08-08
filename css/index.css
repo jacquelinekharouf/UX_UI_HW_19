@@ -87,7 +87,7 @@ h3#y {
     z-index: 2;
     position: relative;
     padding-left: 50px;
-    padding-top: 50px;
+    padding-top: 150px;
     justify-content: center;
     align-items: center;
 }
@@ -162,7 +162,15 @@ a {
     font-family: 'Bad Script'; font-size: 20px;
     text-align: justify;
 }
-
+.inline-block1{
+    display: flex;
+    background: #F9F8F6;
+    box-shadow: 5px 10px #8888881d;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: auto;
+}
 
 .inline-block2{
     display: flex;
