@@ -51,7 +51,13 @@ h1 {
     text-decoration: none;
     text-align: center;
 }
-
+h1#contact {
+    color: #3B937B;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 25px;
+    margin-bottom: 0px;
+}
 h6.a {
     color: #000000;
     text-decoration: none;
@@ -73,12 +79,16 @@ h6.c {
 h3 {
     color: #86DFEF;
 }
+h3#z {
+    color: #3B937B;
+}
 h3#x {
     color: #86DFEF;
 }
 h3#y {
     color: #86DFEF;
 }
+
 
 .hero {
     display: grid;
@@ -136,6 +146,13 @@ button {
 a {
     color: #F9F8F6;
     text-decoration: none;
+}
+a:hover {
+    color: #81C181;
+    text-decoration: none;
+}
+a:active{
+    color:#86DFEF;
 }
 #child1button, #child2button, #child3button {
     display: inline-block;
@@ -263,6 +280,27 @@ a {
     padding: 40px;
     padding-bottom: 100px;
     padding-top: 10px;
+    
+}
+
+.myContact {
+    background-color: #86DFEF;
+    border-radius: 10px;
+    box-shadow: 5px 10px #8888881d;
+    
+    padding-bottom: 10px;
+    margin: 30px;
+}
+.myContactInfo {
+    margin: 50px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding: 10px;
+}
+.myContactBlock {
+    margin-top: 25px;
+    padding: 0%;
+    
     
 }
 
