@@ -1,8 +1,7 @@
 
 console.log("Your index.js file is loaded correctly!");
+
 $("p1#b").css("display","none");
-$("h6#a").css("display","none");
-$("#a").css("display","none");
 $("h3#x").css("display","none")
 
 $("#child1button").mouseenter(function(){

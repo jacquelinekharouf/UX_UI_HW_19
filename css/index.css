@@ -1,4 +1,60 @@
 
+:root {
+    --nav-color: #F9F8F6;
+    --nav-text: #3B937B;
+    --hover-color: #86DFEF;
+    --nav-footer-color: linear-gradient(to right, #3B937B, #81C181, #86DFEF, #3B937B, #81C181);
+  }
+.container {
+    top: 5%;
+    font-size: 1.2rem;
+    font-family: 'Gotu';
+    font-size: 19px;
+    height: 90px;
+}
+.container_footer {
+    background: var(--nav-footer-color);
+    font-size: 1.2rem;
+    font-family: 'Gotu';
+    font-size: 19px;
+    height: 120px;
+    border-radius: 10px;
+}
+.navbar {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+.navbar ul {
+    display: flex;
+}
+.container .container_footer .navbar {
+    justify-content: space-evenly 50px;
+}
+.navbar ul li {
+    list-style-type: none;
+}
+  
+.container .container_footer .navbar ul li {
+    padding: 10px;
+    margin: 0 10px;
+}
+  
+.navbar a {
+    color: var(--nav-text);
+    font-weight: none;
+}
+  
+.navbar a:hover {
+    color: var(--hover-color);
+}
+
+ul {
+    display: flex;
+}
 .inline-block-head{
     display: inline-flex;
     flex-direction: row;
@@ -88,46 +144,40 @@ h3#x {
 h3#y {
     color: #86DFEF;
 }
+.nav-item {
+    font-family: 'Gotu';
+    font-size: 19px;
+    color: #3B937B;
+}
+a.nav-link {
+    color: #3B937B;
+}
 
-
-.hero {
-    display: grid;
-    grid-template: 1fr / 1fr;
-    place-items: center;
-    z-index: 2;
-    position: relative;
-    padding-left: 50px;
-    padding-top: 150px;
-    justify-content: center;
-    align-items: center;
+.card-img {
+    border-radius: 20px;
+    width: 750px;
+    height: 400px;
 }
 
 .heroimg {
-    top: 0;
+    
     display: flex;
-    grid-template: 1fr / 1fr;
-    grid-area: top2;
-    padding-top: 200px;
-    place-items: center;
-    z-index: 1;
-    position: absolute;
-    justify-content: center;
+    padding-top: 500px;
     align-items: center;
     margin: 0;
-    width: 100%;
+    width: auto;
 }
 
-.content {
-    display: block;
-    grid-area: top3;
-    grid-template-columns: 800px;
-    grid-template-rows: 700px;
+#content {
+    display: flex;
     width: 100%;
     margin: 0px;
     text-align: center;
     justify-content: center;
-    padding-top: 250px;
-    padding-bottom: 1px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
 }
 
 
@@ -202,12 +252,29 @@ a:active{
     display: flex;
     
 }
-
+.container-fluid {
+    justify-content: center;
+}
+.card {
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+}
+.row {
+    margin: 100px;
+}
+.cardContainer {
+    justify-content: center;
+}
+.mySkills .myToolsBox {
+    display: grid;
+}
 .mySkillsBox, .myToolsBox {
     background-color: #F9F8F6;
     border-radius: 10px;
     box-shadow: 5px 10px #8888881d;
     padding-left: 3%;
+    margin: 50px;
 }
 .mySkillsTopHeader {
     text-align: center;
@@ -215,6 +282,8 @@ a:active{
     background-color: #86DFEF;
     border-radius: 10px;
     box-shadow: 5px 10px #8888881d;
+    padding-top: 1%;
+    margin: 50px;
 }
 .child1 {
     text-align: center;
@@ -240,6 +309,7 @@ a:active{
     background-color: #86DFEF;
     border-radius: 10px;
     box-shadow: 5px 10px #8888881d;
+    margin: 50px;
 }
 
 .work1 {
@@ -284,7 +354,7 @@ a:active{
     border-radius: 20px;
 }
 
-.myContact {
+#myContact {
     background-color: #86DFEF;
     border-radius: 10px;
     box-shadow: 5px 10px #8888881d;
@@ -304,86 +374,91 @@ a:active{
     
     
 }
-
-
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px){
+    .container .container_footer {
+          height: 100%;
+        }
+      
+        .container .container_footer .navbar {
+          flex-direction: column;
+        }
+        
     .heroimg {
-        top: 0;
-        display: flex;
-        grid-template: 1fr / 1fr;
-        padding-top: 100px;
-        place-items: center;
-        z-index: 1;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        width: 50px;
-    }
-    
-    
-    .flexContainer {
-        flex-direction: column;
-    }
-    .child1 {
-        text-align: center;
-        width: 100%;
-        margin: 1%;
-        padding: 1%;
-    }
-    .child2 {
-        text-align: center;
-        width: 100%;
-        margin: 1%;
-        padding: 1%;
-    }
-    .child3 {
-        text-align: center;
-        width: 100%;
-        margin: 1%;
-        padding: 1%;
-    }
-    .work1 {
-        grid-area: area1;
-        border-radius: 10px;
+            
+            display: flex;
+            flex-direction: column;
+            padding-top: 150px;
+            place-items: center;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            
+        }
         
-    }
-    .work1Para {
-        grid-area: area1a;
-    }
-    
-    .work2 {
-        grid-area: area2; 
-        border-radius: 10px;
         
-    }
-    .work2Para {
-        grid-area: area2a;
-    }
-    
-    .work3 {
-        grid-area: area3;
-        border-radius: 10px;
+        .flexContainer {
+            flex-direction: column;
+        }
+        .child1 {
+            text-align: center;
+            width: 100%;
+            margin: 1%;
+            padding: 1%;
+        }
+        .child2 {
+            text-align: center;
+            width: 100%;
+            margin: 1%;
+            padding: 1%;
+        }
+        .child3 {
+            text-align: center;
+            width: 100%;
+            margin: 1%;
+            padding: 1%;
+        }
+        .work1 {
+            grid-area: area1;
+            border-radius: 10px;
+            
+        }
+        .work1Para {
+            grid-area: area1a;
+        }
         
-    }
-    .work3Para {
-        grid-area: area3a;
-    }
-    
-    
-    .workGrid {
-        display: grid;
-        grid-template-areas: 
-        'area1' 
-        'area1a'
-        'area2'
-        'area2a'
-        'area3' 
-        'area3a';
-        grid-gap: 40px;
-        padding: 40px;
-        padding-bottom: 100px;
-        padding-top: 10px;
+        .work2 {
+            grid-area: area2; 
+            border-radius: 10px;
+            
+        }
+        .work2Para {
+            grid-area: area2a;
+        }
         
+        .work3 {
+            grid-area: area3;
+            border-radius: 10px;
+            
+        }
+        .work3Para {
+            grid-area: area3a;
+        }
+        
+        
+        .workGrid {
+            display: grid;
+            grid-template-areas: 
+            'area1' 
+            'area1a'
+            'area2'
+            'area2a'
+            'area3' 
+            'area3a';
+            grid-gap: 40px;
+            padding: 40px;
+            padding-bottom: 100px;
+            padding-top: 10px;
+            
+        }
     }
-}
+

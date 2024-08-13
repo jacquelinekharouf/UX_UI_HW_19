@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-                
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jacqueline Kharouf</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link href="css/index.css" rel="stylesheet" type="text/css">
-        <link href='https://fonts.googleapis.com/css?family=Gotu|Bad Script' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Gotu|Bad Script" rel="stylesheet">
+</head>
 <style>
 body {
     h1 {font-family: 'Gotu'; font-size: 110px};
@@ -25,29 +27,59 @@ body {
     </head>
 <!--  Header coded within inline-block --> 
     <body>
-        <div class="inline-block1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        
+
+        <div class="container">
+            
+            <h1>Jacqueline Kharouf</h1>
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="#myWork">Case Studies |</a></li>
+                        <li><a href="#">| CV </a></li>
+                        <li><a href="#top"><img src="images/logoidea1_edited.png" width="100 px" height="100 px"></a></li>
+                        <li><a href="#content">About | </a></li>
+                        <li><a href="#myContact">| Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!--<nav class="inline-block1">
             <div class="logo">
                 <img src="images/logoidea1_edited.png" width="100 px" height="100 px">
             </div>
-            <ul>
-                <li class="inline-block-head"><h6 class="a">Home</h6></li>
-                <li class="inline-block-head"><h6 class="b">Case Studies</h6></li>
-                <li class="inline-block-head"><h6 class="b">CV</h6></li>
-                <li class="inline-block-head"><h6 class="b">About</h6></li>
-                <li class="inline-block-head"><h6 class="b">Contact</h6></li>
-            </ul>      
-        </div>
+            <ul class="nav nav-underline">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#myWork">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#myWork">Case Studies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">CV</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#content">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#myContact">Contact</a>
+                  </li>
+                
+              </ul>
+                  
+            </nav>-->
         
 <!--  My Hero section --> 
-<div class="hero">
-    <h1>Jacqueline Kharouf</h1>
-</div>
 
-<section class="heroimg">    
-    <img src="images/background-image1.png" width="1000 px">   
-</section>
+
+<div class="heroimg">    
+    <img src="images/heroimage1.png" width="1000 px">   
+</div>
       
-<div class="content">
+<div id="content">
     <h6 class="b">Jacqueline Kharouf is a UX writer. She specializes in writing user-centered content, drafting insightful research plans, and crafting user personas. <br>Jacqueline is a storyteller.<br><br>
         With her Master of Fine Arts degree in creative writing and her writing experience, Jacqueline knows how to craft a story and to create empathetic, human personas.<br><br>
         She loves to tackle overlooked (or misunderstood) user problems—such as how a single parent can better book travel accommodations; or how musicians can reach out to fans and collaborators all on one live-streaming platform; or how a local non-profit can raise awareness and keep supporters better informed.<br><br>
@@ -65,51 +97,98 @@ body {
             <div class="mySkillsBox">
                 <h3 id="y">My Skills</h3>
             </div>
-                <div class="flexContainer">
-                    <div class="child1">
-                        <div id="child1button"><img src="images/pen-icon2.png"></div>
-                        <h3 id="x">User-Centered Writing</h3>
-                        <p1 id="b">I empathize with the user’s problem and write a solution that fits the user’s needs and goals.</p1>
-                    </div>
-                    <div class="child2">
-                        <div id="child2button"><img src="images/ux-research-skills.png"></div>
-                        <h3 id="x">UX <br>Research</h3>
-                        <p1 id="b">I craft surveys that collect accurate data and help my team develop a full understanding of the typical user population.</p1>
-                    </div>
-                    <div class="child3">
-                        <div id="child3button"><img src="images/interview-skills.png"></div>
-                        <h3 id="x">Qualitative Interviews</h3>
-                        <p1 id="b">I write questions that get to the heart of the problem. I listen to the user and take notes so that I can ask better follow-up questions.</p1>
-                    </div>
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="cardContainer col-lg-4 col-md-4 col-sm-12"><div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 20rem;">
+                        <div id="child1button"><img src="images/pen-icon2.png" class="card-img-top" alt="writing"></div>
+                        <div class="card-body">
+                          <h3 id="x">User-Centered Writing</h3>
+                          <p1 id="b">I empathize with the user’s problem and write a solution that fits the user’s needs and goals.</p1>
+                          
+                        </div>
+                      </div>
+                  </div>
                 </div>
+          
+                <div class="cardContainer col-lg-4 col-md-4 col-sm-12"><div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 20rem;">
+                        <div id="child2button"><img src="images/ux-research-skills.png" class="card-img-top" alt="research"></div>
+                        <div class="card-body">
+                          <h3 id="x">UX Research</h3>
+                          <p1 id="b">I craft surveys that collect accurate data and help my team develop a full understanding of the typical user population.</p1>
+                          
+                        </div>
+                      </div>
+                  </div>
+                </div>
+          
+                    <div class="cardContainer col-lg-4 col-md-4 col-sm-12"><div class="card" style="width: 18rem;">
+                        <div class="card" style="width: 20rem;">
+                            <div id="child3button"><img src="images/interview-skills.png" class="card-img-top" alt="interviews"></div>
+                            <div class="card-body">
+                              <h3 id="x">Qualitative Interviews</h3>
+                              <p1 id="b">I write questions that get to the heart of the problem. I listen to the user and take notes so that I can ask better follow-up questions.</p1>
+                              
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    </div>
+
+
+               
             <div class="myToolsBox">
                     <h3 id="y">My Tools</h3>
             </div>
-                    <div class="flexContainer">
-                        <div class="child1">
-                            <div id="child1buttonT"><img src="images/paper-pencil-tools.png"></div>
-                            <h3 id="x">Paper & Pencil</h3>
-                            <p1 id="b">My favorite and most basic tool. By using paper and pencil, I visualize my ideas and leave room for error.</p1>
+
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="cardContainer col-lg-4 col-md-4 col-sm-12"><div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 20rem;">
+                        <div id="child1buttonT"><img src="images/paper-pencil-tools.png" class="card-img-top" alt="pencil"></div>
+                        <div class="card-body">
+                          <h3 id="x">Paper & Pencil</h3>
+                          <p1 id="b">My favorite and most basic tool. By using paper and pencil, I visualize my ideas and leave room for error.</p1>
+                          
                         </div>
-                        <div class="child2">
-                            <div id="child2buttonT"><img src="images/figma-tools.png"></div>
-                            <h3 id="x">Figma</h3>
-                            <p1 id="b">The second-best tool available to a UX designer. Figma allows me to bring my sketches to life.</p1>
+                      </div>
+                  </div>
+                </div>
+          
+                <div class="cardContainer col-lg-4 col-md-4 col-sm-12"><div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 20rem;">
+                        <div id="child2buttonT"><img src="images/figma-tools.png" class="card-img-top" alt="figma"></div>
+                        <div class="card-body">
+                          <h3 id="x">Figma</h3>
+                          <p1 id="b">The second-best tool available to a UX designer. Figma allows me to bring my sketches to life.</p1>
+                          
                         </div>
-                        <div class="child3">
-                            <div id="child3buttonT"><img src="images/google-drive-tools.png"></div>
-                            <h3 id="x">Google Drive</h3>
-                            <p1 id="b">I live to stay organized and Google Drive is simply one of the best tools to do just that.</p1>
-                        </div>
+                      </div>
+                  </div>
+                </div>
+          
+                    <div class="cardContainer col-lg-4 col-md-4 col-sm-12"><div class="card" style="width: 18rem;">
+                        <div class="card" style="width: 20rem;">
+                            <div id="child3buttonT"><img src="images/google-drive-tools.png" class="card-img-top" alt="gdrive"></div>
+                            <div class="card-body">
+                              <h3 id="x">Google Drive</h3>
+                              <p1 id="b">I live to stay organized and Google Drive is simply one of the best tools to do just that.</p1>
+                              
+                            </div>
+                          </div>
+                      </div>
                     </div>
-            
+                    </div>
 
         </section>
 <!-- My Work Section Constructed using CSS Grid -->
-        <section class="myWork">
+        <section id="myWork">
             <div class="myWorkHeader">
                 <h1>Case Studies</h1>
             </div>
+
+        
 
             <div class="workGrid">
                 <div class="work1">
@@ -139,7 +218,7 @@ body {
             </div>
         </section>
 
-        <section class="myContact">
+        <section id="myContact">
             <div class="myContactBlock">
                 <h1 id="contact">Let's stay in touch</h1>
             </div>
@@ -151,8 +230,21 @@ body {
             </div>
         </section>
    
+        <div class="container_footer">
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="#myWork">Case Studies |</a></li>
+                        <li><a href="#">| CV</a></li>
+                        <li><a href="#top"><img src="images/logoidea1_edited.png" width="100 px" height="100 px"></a></li>
+                        <li><a href="#content">About |</a></li>
+                        <li><a href="#myContact">| Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
         
-        <div class="inline-block2">    
+        <!--<div class="inline-block2">    
             <ul>
                 <li class="inline-block-foot"><h6 class="c">Case Studies</h6></li>
                 <li class="inline-block-foot"><h6 class="c">CV</h6></li>
@@ -160,8 +252,8 @@ body {
                 <li class="inline-block-foot"><h6 class="c">About</h6></li>
                 <li class="inline-block-foot"><h6 class="c">Contact</h6></li>
             </ul>
-        </div>
-        
+        </div>-->
+        <script src="js/index.js"></script>
     </body>
-    <script src="js/index.js"></script>
+    
 </html>
